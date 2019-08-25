@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_margin="@dimen/margin"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageStream"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@string/streamer_image_content_description"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/textStreamTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/textStreamTitle"
+            style="@style/TextStyle.Body.Inverse"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/textStreamUser"
+            tools:text="Titulo da stream" />
+
+        <TextView
+            android:id="@+id/textStreamUser"
+            style="@style/TextStyle.Body.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textStreamViewers"
+            tools:text="Titulo da stream" />
+
+        <TextView
+            android:id="@+id/textStreamViewers"
+            style="@style/TextStyle.Body.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="1555 espectadores" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

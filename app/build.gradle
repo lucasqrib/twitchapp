@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from :"../module_config.gradle"
+
+android {
+    defaultConfig {
+        applicationId "com.lucasribeiro.bestgames"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation project(":commons")
+    implementation project(":bestgames")
+    implementation project(":beststreamers")
+}

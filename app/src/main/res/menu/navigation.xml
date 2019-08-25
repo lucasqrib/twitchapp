@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_games"
+        android:id="@+id/best_games_navigation"
+        android:title="@string/top_games" />
+
+    <item
+        android:icon="@drawable/ic_streams"
+        android:id="@+id/best_streamers_navigation"
+        android:title="@string/top_streamers" />
+</menu>

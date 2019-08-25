@@ -1,0 +1,7 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: "../module_config.gradle"
+dependencies {
+    api libraries.values()
+}

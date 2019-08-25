@@ -1,0 +1,9 @@
+<resources>
+    <string name="top_streamers">Melhores Streamers</string>
+    <string name="streamer_image_content_description">Imagem da stream</string>
+    <plurals name="viewers">
+        <item quantity="other">%d espectadores</item>
+        <item quantity="one">%d espectador</item>
+    </plurals>
+    <string name="best_streamers">Melhores streams</string>
+</resources>

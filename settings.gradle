@@ -1,0 +1,2 @@
+include ':app', ':bestgames', ':commons', ':beststreamers'
+rootProject.name='Best Games'

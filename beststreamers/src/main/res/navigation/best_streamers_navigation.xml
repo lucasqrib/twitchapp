@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/best_streamers_navigation"
+    app:startDestination="@id/bestStreamersListFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/bestStreamersListFragment"
+        android:name="com.lucasribeiro.beststreamers.presentation.BestStreamersListFragment"
+        android:label="@string/best_streamers" />
+    <action
+        android:id="@+id/action_global_bestStreamersListFragment"
+        app:destination="@id/bestStreamersListFragment" />
+</navigation>

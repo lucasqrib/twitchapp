@@ -1,0 +1,38 @@
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    flavorDimensions 'api'
+    productFlavors {
+        mock {
+            dimension = 'api'
+            buildConfigField("String", "API_URL", "\"\"")
+            buildConfigField("String", "CLIENT_KEY", "\"\"")
+        }
+        remote {
+            dimension = 'api'
+            buildConfigField("String", "API_URL", "\"https://api.twitch.tv/helix/\"")
+            buildConfigField("String", "CLIENT_KEY", "\"qbmvep160sy5wobf7kfs22sy31fxi1\"")
+        }
+    }
+}
